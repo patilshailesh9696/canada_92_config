@@ -11,6 +11,12 @@ Bahmni.Registration.customValidator = {
         },
         errorMessage: "REGISTRATION_TELEPHONE_NUMBER_ERROR_KEY"
     },
+    "MiddleName": {
+        method: function (name, value, personAttributeDetails) {
+            return value && value.length> 6;
+        },
+        errorMessage: "REGISTRATION_TELEPHONE_NUMBER_ERROR_KEY"
+    },
     "caste": {
         method: function (name, value, personAttributeDetails) {
             return value.match(/^\w+$/);
